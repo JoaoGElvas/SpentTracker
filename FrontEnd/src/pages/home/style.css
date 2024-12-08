@@ -1,49 +1,83 @@
 .container {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
   padding-top: 100px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  color: green;
+  background-color: #e6f7e6;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.error-message {
+  margin-top: 20px;
+  padding: 10px;
+  color: red;
+  background-color: #f8d7da;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
 }
 
 h1 {
-  color: blue;
-  font-size: 32px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   padding: 30px;
-  border-radius: 10px;
-  background-color: chartreuse;
-  max-width: 50%;
-  width: 400px;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
 
-  & button {
-    border-radius: 30px;
-    background-color: aquamarine;
-    height: 40px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    color: white;
-    font-size: 14px;
-  }
+form input {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  height: 40px;
+  background-color: #f7f7f7;
+  color: #333;
+  font-size: 14px;
+  padding-left: 12px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
 
-  & button:hover {
-    opacity: 0.8;
-  }
+form input:focus {
+  border-color: #0078d4;
+  box-shadow: 0 0 4px rgba(0, 120, 212, 0.4);
+}
 
-  & input {
-    border: 1px solid #48456c;
-    border-radius: 30px;
-    height: 40px;
-    background-color: chocolate;
-    color: white;
-    font-size: 16px;
-    padding-left: 10px;
-    outline: none;
-  }
+form button {
+  border-radius: 8px;
+  background-color: #0078d4;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #005bb5;
+  transform: scale(1.02);
 }
